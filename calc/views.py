@@ -4,6 +4,6 @@ from django.http import HttpResponse
 # Create your views here.
 
 
-def home(requet):
+def home(request):
     #return "hello world" this wont work
     return HttpResponse("Hello World")
