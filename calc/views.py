@@ -6,4 +6,7 @@ from django.http import HttpResponse
 
 def home(request):
     #return "hello world" this wont work
-    return HttpResponse("Hello World")
+    #return HttpResponse("Hello World")
+    #return HttpResponse("<h1>Hello World</h1>") this will work
+    #return render(request,'home.html') #this home.html is in templates folder 
+    return render(request,'home.html',{'name':'anirudh'})
