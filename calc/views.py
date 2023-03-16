@@ -17,3 +17,9 @@ def add(request):
     #make sure you use single quote above
     res=int(val1) + int(val2)
     return render(request,'result.html',{'result':res})
+
+def addPost(request):
+    val1=request.POST['number1'] #we should use POST since we are getting a post request. 
+    val2=request.POST['number2']
+    res=int(val1)+int(val2)
+    return render(request,'result.html',{'result':res})
